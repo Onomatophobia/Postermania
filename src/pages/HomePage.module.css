@@ -1,0 +1,25 @@
+/* src/pages/HomePage.module.css */
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contentContainer {
+    display: flex;
+    flex-grow: 1; /* Take remaining height */
+    position: relative; /* Context for absolutely positioned children if any */
+}
+
+.mainContent {
+    flex-grow: 1; /* Take remaining width */
+    padding-top: 1rem; /* pt-4 */
+    transition: margin-left 0.3s ease-in-out;
+    /* Initial margin to accommodate toggle button */
+    margin-left: 10px;
+}
+
+.mainContent.mainContentShifted {
+    /* Adjust margin when sidebar is collapsed */
+    margin-left: 30px;
+}

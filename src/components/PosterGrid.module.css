@@ -1,0 +1,38 @@
+/* src/components/PosterGrid.module.css */
+.posterGrid {
+    display: grid;
+    /* Responsive columns */
+    grid-template-columns: repeat(2, 1fr); /* Mobile: 2 columns */
+    gap: 1rem; /* gap-4 */
+    padding: 0 1rem 2rem 1rem; /* px-4 pb-8 */
+}
+
+/* Small screens and up: 3 columns */
+@media (min-width: 640px) { /* sm breakpoint */
+    .posterGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.25rem; /* sm:gap-5 */
+        padding: 0 1.5rem 2rem 1.5rem; /* sm:px-6 */
+    }
+}
+
+/* Medium screens and up: 4 columns */
+@media (min-width: 768px) { /* md breakpoint */
+    .posterGrid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Large screens and up: 5 columns */
+@media (min-width: 1024px) { /* lg breakpoint */
+    .posterGrid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* Extra Large screens and up: 6 columns */
+@media (min-width: 1280px) { /* xl breakpoint */
+    .posterGrid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}

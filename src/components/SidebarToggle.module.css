@@ -1,0 +1,35 @@
+/* src/components/SidebarToggle.module.css */
+.toggleButton {
+    position: fixed; /* Position relative to viewport */
+    top: 85px; /* Position below header, adjust as needed */
+    z-index: 35; /* Above sidebar, below header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px; /* w-6 */
+    height: 24px; /* h-6 */
+    color: #d1d5db; /* text-gray-300 */
+    background-color: #1f2937; /* bg-gray-800 */
+    border-radius: 9999px; /* rounded-full */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, left 0.3s ease-in-out, transform 0.3s ease-in-out;
+    /* Remove default button padding if necessary */
+    padding: 0;
+}
+
+.toggleButton:hover {
+    background-color: #374151; /* hover:bg-gray-700 */
+}
+
+.toggleButton:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    /* Add custom focus ring if desired */
+    box-shadow: 0 0 0 2px #000, 0 0 0 4px #6b7280; /* Example focus ring */
+}
+
+.toggleIcon {
+    width: 1rem; /* w-4 */
+    height: 1rem; /* h-4 */
+}
